@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100px; 
+    height: 100px;
+    background-color: aqua; 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+/*                                      Animation                                               */
+    animation: transferDiv 0.15s ease-in-out infinite alternate-reverse;
+/*                                      Animation                                               */
+
+
+/*                                      Transition                                               */
+    /* transform: rotate(50deg); */
+    /* transform: perspective(0); */
+    /* transform: skew(70deg, 60deg); */
+    /* transform: rotate3d(0, 1, 0, 60deg); */
+    /* transform: scale(2); */
+    /* transform: skew(10deg, 20deg) rotate(50deg) rotate3d(0, 1, 0, 60deg); */
+    /* transform: translate(20rem) scale(3) rotate(50deg) skew(10deg, 20deg); */
+    /* transition: all 2s ease-out 0.2s; */
+/*                                      Transition                                                */
+
+}
+
+/* div:hover{
+    transform: rotate(360deg) scale(0.5);
+    border-radius: 50px;
+} */
+
+@keyframes transferDiv{
+    0%{
+        transform: translateY(0PX)
+    }
+    25%{
+        transform: translateY(-50PX)
+    }
+    50%{
+        transform: translateY(-50PX)
+    }
+    75%{
+        transform: translateY(-25PX)
+    }
+    100%{
+        transform: translateY(-25PX)
+    }
+    /* from{
+        border: 0%;
+    }
+
+    to{
+        border-radius: 50%;
+    } */
+}
